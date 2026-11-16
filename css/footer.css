@@ -1,0 +1,343 @@
+
+/* =========================================================
+   NIT NAGALAND CONFERENCE 2027
+   FOOTER STYLESHEET
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   01. FOOTER MAIN
+--------------------------------------------------------- */
+
+.site-footer {
+  background: var(--navy-dark);
+  color: var(--white);
+}
+
+.footer-main {
+  padding: 75px 0 65px;
+  background: #0d1b30;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr 1fr 1.1fr;
+  gap: 48px;
+}
+
+
+/* ---------------------------------------------------------
+   02. FOOTER BRAND
+--------------------------------------------------------- */
+
+.footer-brand__identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 23px;
+}
+
+.footer-brand__logo {
+  width: 52px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.footer-brand__identity div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-brand__identity strong {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer-brand__identity span {
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-brand__description {
+  color: rgba(255,255,255,0.62);
+  font-size: 12px;
+  line-height: 1.9;
+  max-width: 310px;
+  margin-bottom: 25px;
+}
+
+.footer-brand__date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 13px;
+  border-left: 2px solid var(--gold);
+}
+
+.footer-brand__date span {
+  font-size: 9px;
+  color: var(--gold-light);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.footer-brand__date strong {
+  font-size: 13px;
+  color: var(--white);
+}
+
+
+/* ---------------------------------------------------------
+   03. FOOTER COLUMN HEADINGS
+--------------------------------------------------------- */
+
+.footer-column__title {
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+.footer-column__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 34px;
+  height: 2px;
+  background: var(--gold);
+}
+
+
+/* ---------------------------------------------------------
+   04. FOOTER LINKS
+--------------------------------------------------------- */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  display: inline-block;
+  color: rgba(255,255,255,0.62);
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+.footer-links a::before {
+  content: "›";
+  color: var(--gold);
+  margin-right: 9px;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+  transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   05. FOOTER CONTACT INFORMATION
+--------------------------------------------------------- */
+
+.footer-contact__item {
+  margin-bottom: 15px;
+}
+
+.footer-contact__label {
+  display: block;
+  color: var(--gold-light);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+
+.footer-contact__item p {
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.footer-contact__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.footer-contact__link span {
+  font-size: 15px;
+  transition: transform var(--transition);
+}
+
+.footer-contact__link:hover {
+  color: var(--white);
+}
+
+.footer-contact__link:hover span {
+  transform: translate(3px, -2px);
+}
+
+
+/* ---------------------------------------------------------
+   06. ANRF ACKNOWLEDGEMENT
+--------------------------------------------------------- */
+
+.footer-acknowledgement {
+  background: #132640;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 26px 0;
+}
+
+.footer-acknowledgement__content {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.footer-acknowledgement__label {
+  display: block;
+  color: var(--gold-light);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.footer-acknowledgement__content p {
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   07. FOOTER BOTTOM
+--------------------------------------------------------- */
+
+.footer-bottom {
+  background: #091525;
+  padding: 19px 0;
+}
+
+.footer-bottom__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+}
+
+.footer-bottom__links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-bottom__links a {
+  color: rgba(255,255,255,0.6);
+  font-size: 10px;
+  transition: var(--transition);
+}
+
+.footer-bottom__links a:hover {
+  color: var(--gold-light);
+}
+
+.footer-back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.footer-back-top span {
+  font-size: 16px;
+}
+
+.footer-back-top:hover {
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+
+/* ---------------------------------------------------------
+   08. RESPONSIVE FOOTER
+--------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+
+  .footer-brand__description {
+    max-width: 380px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .footer-main {
+    padding: 55px 0 45px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .footer-brand__description {
+    max-width: 100%;
+  }
+
+  .footer-column__title {
+    margin-bottom: 18px;
+  }
+
+  .footer-acknowledgement {
+    padding: 24px 0;
+  }
+
+  .footer-acknowledgement__content p {
+    font-size: 11px;
+  }
+
+  .footer-bottom__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .footer-bottom__links {
+    justify-content: center;
+  }
+
+}
