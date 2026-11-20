@@ -1,10 +1,14 @@
 
 /* =========================================================
    NIT NAGALAND CONFERENCE 2027
-   TWO-PART HEADER AND MEGA MENU
-   ========================================================= */
+   PREMIUM TWO-PART HEADER AND MEGA MENU
+   Navy Blue | White | Academic Gold
+========================================================= */
 
-/* ---------- HEADER BASE ---------- */
+
+/* =========================================================
+   1. HEADER BASE
+========================================================= */
 
 #site-header {
   position: relative;
@@ -12,31 +16,37 @@
 }
 
 .site-header {
+  position: relative;
   width: 100%;
-  background: var(--white);
-  box-shadow: 0 3px 18px rgba(16, 31, 54, 0.09);
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(16, 31, 54, 0.09);
 }
 
+
 /* =========================================================
-   PART 1: TOP INSTITUTIONAL BANNER
-   ========================================================= */
+   2. TOP INSTITUTIONAL BANNER
+========================================================= */
 
 .header-top {
+  position: relative;
   width: 100%;
-  padding: 20px 0;
-  background: var(--white);
-  border-bottom: 1px solid var(--mid-grey);
+  padding: 22px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf3;
 }
 
 .header-top__inner {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr) 150px;
+  grid-template-columns: 155px minmax(0, 1fr) 155px;
   align-items: center;
-  gap: 24px;
-  min-height: 150px;
+  gap: 28px;
+  min-height: 145px;
 }
 
-/* ---------- LOGO AREAS ---------- */
+
+/* =========================================================
+   3. INSTITUTIONAL AND CONFERENCE LOGOS
+========================================================= */
 
 .header-logo {
   display: flex;
@@ -50,17 +60,40 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  text-decoration: none;
 }
 
 .header-logo img {
   display: block;
-  width: 130px;
-  height: 125px;
-  padding: 5px;
+  width: 140px;
+  height: 135px;
+  padding: 4px;
   object-fit: contain;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
-/* ---------- CENTRE CONFERENCE INFORMATION ---------- */
+.header-logo a:hover img {
+  transform: scale(1.045);
+  opacity: 0.94;
+}
+
+/* Individual logo proportions */
+
+.header-logo--institute img {
+  max-width: 100%;
+}
+
+.header-logo--conference img {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   4. CENTRE CONFERENCE INFORMATION
+========================================================= */
 
 .header-conference-info {
   min-width: 0;
@@ -69,84 +102,146 @@
 
 .header-conference-info p {
   margin: 0;
-  color: var(--text-dark);
+  color: #526176;
 }
+
+/* Conference title */
 
 .header-conference-info__title {
-  margin-bottom: 3px !important;
-  color: var(--navy) !important;
+  margin-bottom: 5px !important;
+
+  color: #142944 !important;
   font-family: var(--font-heading);
-  font-size: clamp(1.05rem, 1.8vw, 1.45rem);
+
+  font-size: clamp(1.08rem, 1.75vw, 1.48rem);
   font-weight: 800;
-  line-height: 1.4;
+  line-height: 1.38;
+  letter-spacing: -0.3px;
 }
 
+/* Conference acronym */
+
 .header-conference-info__acronym {
-  margin-bottom: 9px !important;
-  color: var(--navy-light) !important;
-  font-size: 0.95rem;
-  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 11px !important;
+
+  color: #a17c3c !important;
+
+  font-size: 0.94rem;
+  font-weight: 800;
+  letter-spacing: 1.6px;
 }
+
+/* Organised by */
 
 .header-conference-info__organised {
   margin-bottom: 3px !important;
-  font-size: 0.88rem;
+
+  color: #7b8796;
+  font-size: 0.82rem;
+  font-weight: 500;
 }
+
+/* Institute name */
 
 .header-conference-info__institute {
-  font-size: 1rem;
-  font-weight: 700;
+  color: #263d59;
+  font-size: 0.98rem;
+  font-weight: 750;
   line-height: 1.5;
 }
+
+/* Location */
 
 .header-conference-info__location {
-  font-size: 0.91rem;
+  margin-top: 2px !important;
+  color: #738094;
+  font-size: 0.85rem;
 }
+
+/* Date label */
 
 .header-conference-info__date-label {
-  margin-top: 5px !important;
-  font-size: 0.88rem;
+  margin-top: 7px !important;
+  color: #7b8796;
+  font-size: 0.81rem;
 }
+
+/* Conference dates */
 
 .header-conference-info__date {
-  margin-top: 2px !important;
-  color: var(--navy) !important;
-  font-size: 1rem;
+  margin-top: 3px !important;
+
+  color: #172d4b !important;
+
+  font-size: 0.98rem;
   font-weight: 800;
+  letter-spacing: 0.3px;
 }
+
+/* ANRF PAIR acknowledgement */
 
 .header-conference-info__programme {
-  margin-top: 8px !important;
-  color: var(--text-muted) !important;
-  font-size: 0.78rem;
-  line-height: 1.5;
+  max-width: 600px;
+  margin: 9px auto 0 !important;
+
+  color: #7b8796 !important;
+
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
+
 /* =========================================================
-   PART 2: MAIN NAVIGATION BAR
-   ========================================================= */
+   5. MAIN NAVIGATION BAR
+========================================================= */
 
 .main-nav {
   position: relative;
   z-index: 2000;
+
   width: 100%;
-  background: var(--navy);
-  box-shadow: 0 4px 14px rgba(9, 22, 41, 0.16);
+
+  background: linear-gradient(
+    105deg,
+    #101f36 0%,
+    #172d4b 55%,
+    #203956 100%
+  );
+
+  box-shadow: 0 4px 15px rgba(9, 22, 41, 0.17);
 }
 
-/* ---------- JAVASCRIPT-CONTROLLED STICKY NAVIGATION ---------- */
+/* Sticky navigation */
 
 .main-nav.is-fixed {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+
   width: 100%;
   z-index: 2000;
-  box-shadow: 0 4px 16px rgba(9, 22, 41, 0.2);
+
+  box-shadow: 0 5px 20px rgba(9, 22, 41, 0.22);
+
+  animation: nav-slide-down 0.3s ease both;
 }
 
-/* Maintains the original navigation space when it becomes fixed */
+@keyframes nav-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Spacer for fixed navigation */
 
 .main-nav-spacer {
   display: none;
@@ -158,224 +253,359 @@
   display: block;
 }
 
+
+/* =========================================================
+   6. NAVIGATION INNER CONTAINER
+========================================================= */
+
 .main-nav__inner {
   position: relative;
+
   display: flex;
   align-items: stretch;
   justify-content: center;
-  min-height: 58px;
+
+  min-height: 60px;
 }
 
-/* ---------- MAIN MENU LIST ---------- */
+
+/* =========================================================
+   7. MAIN NAVIGATION LIST
+========================================================= */
 
 .main-nav__list {
   display: flex;
   align-items: stretch;
   justify-content: center;
+
   width: 100%;
+
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .main-nav__item {
   position: relative;
+
   display: flex;
   align-items: stretch;
+
   flex: 0 1 auto;
   min-width: 0;
 }
 
-/* ---------- MAIN MENU LINKS ---------- */
+
+/* =========================================================
+   8. NAVIGATION LINKS AND DROPDOWN BUTTONS
+========================================================= */
 
 .main-nav__link,
 .main-nav__toggle {
-  display: flex;
+  position: relative;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 58px;
-  padding: 10px 12px;
+  gap: 7px;
+
+  min-height: 60px;
+  padding: 10px 11px;
+
   border: 0;
   border-bottom: 3px solid transparent;
+
   background: transparent;
-  color: var(--white);
+  color: #ffffff;
+
   font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.79rem;
+  font-weight: 650;
   line-height: 1.35;
+
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+
   cursor: pointer;
+
   transition:
-    background 0.25s ease,
     color 0.25s ease,
+    background 0.25s ease,
     border-color 0.25s ease;
 }
+
+/* Hover and active states */
 
 .main-nav__link:hover,
 .main-nav__toggle:hover,
 .main-nav__item.is-open > .main-nav__toggle {
-  border-bottom-color: var(--gold);
-  background: var(--navy-light);
-  color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.075);
+  color: #e5cc96;
+  border-bottom-color: #c9aa69;
 }
+
+/* Keyboard accessibility */
 
 .main-nav__link:focus-visible,
 .main-nav__toggle:focus-visible {
   position: relative;
   z-index: 2;
-  outline: 2px solid var(--gold-light);
-  outline-offset: -4px;
+
+  outline: 2px solid #e5cc96;
+  outline-offset: -5px;
 }
 
-/* ---------- DROPDOWN ARROW ---------- */
-
-.main-nav__arrow {
-  display: inline-block;
-  font-size: 0.75rem;
-  line-height: 1;
-  transition: transform 0.25s ease;
-}
-
-.has-dropdown.is-open > .main-nav__toggle .main-nav__arrow {
-  transform: rotate(180deg);
-}
 
 /* =========================================================
-   DROPDOWN MENUS
-   Hidden by default. Open on hover, focus or click.
-   ========================================================= */
+   9. PREMIUM DROPDOWN CHEVRON
+   Replaces the existing ⌄ character visually.
+========================================================= */
+
+.main-nav__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+
+  position: relative;
+  top: -2px;
+
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+
+  transition: transform 0.3s ease;
+}
+
+/* Draw a clean chevron */
+
+.main-nav__arrow::before {
+  content: "";
+
+  display: block;
+
+  width: 7px;
+  height: 7px;
+
+  border-right: 1.7px solid currentColor;
+  border-bottom: 1.7px solid currentColor;
+
+  color: #d8c18e;
+
+  transform: rotate(45deg);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Rotate when dropdown opens */
+
+.has-dropdown.is-open > .main-nav__toggle .main-nav__arrow::before {
+  transform: rotate(225deg);
+}
+
+
+/* =========================================================
+   10. DROPDOWN MENUS
+========================================================= */
 
 .has-dropdown {
   position: relative;
 }
+
+/* Base dropdown state */
 
 .mega-menu {
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1200;
-  display: none;
-  width: 245px;
+
+  display: block;
+
+  width: 255px;
   max-width: min(300px, 90vw);
-  padding: 8px;
-  border-top: 3px solid var(--gold);
-  background: var(--white);
-  box-shadow: 0 14px 32px rgba(9, 22, 41, 0.2);
+
+  padding: 9px;
+
+  border-top: 3px solid #c9aa69;
+  border-radius: 0 0 7px 7px;
+
+  background: #ffffff;
+
+  box-shadow: 0 16px 35px rgba(9, 22, 41, 0.18);
+
   text-align: left;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
 }
+
+/* Respect the hidden attribute if used */
 
 .mega-menu[hidden] {
   display: none !important;
 }
 
-/* Open the relevant dropdown on hover and keyboard focus. */
+/* Open dropdown */
 
 @media (min-width: 851px) {
+
   .has-dropdown:hover > .mega-menu:not([hidden]),
   .has-dropdown:focus-within > .mega-menu:not([hidden]),
   .has-dropdown.is-open > .mega-menu:not([hidden]) {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
   }
+
 }
 
-/* ---------- DROPDOWN LINKS ---------- */
+
+/* =========================================================
+   11. DROPDOWN MENU LINKS
+========================================================= */
 
 .mega-menu a {
   display: block;
+
   padding: 11px 13px;
-  border-radius: 4px;
-  color: var(--navy);
-  font-size: 0.87rem;
+
+  border-radius: 5px;
+
+  color: #263b55;
+
+  font-size: 0.86rem;
   font-weight: 600;
   line-height: 1.45;
+
   text-decoration: none;
+
   transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    padding 0.2s ease;
+    background 0.22s ease,
+    color 0.22s ease,
+    padding 0.22s ease;
 }
 
 .mega-menu a:hover,
 .mega-menu a:focus-visible {
-  padding-left: 18px;
-  background: var(--off-white);
-  color: var(--navy);
+  padding-left: 19px;
+
+  background: #f3f5f8;
+  color: #a17c3c;
 }
 
-/* ---------- MOBILE MENU BUTTON ---------- */
+
+/* =========================================================
+   12. MOBILE MENU BUTTON
+========================================================= */
 
 .mobile-menu-button {
   display: none;
+
   align-items: center;
   justify-content: center;
+
   width: 46px;
   height: 44px;
+
   margin: 7px 0;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 5px;
-  background: transparent;
-  color: var(--white);
+
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.045);
+  color: #ffffff;
+
   font-size: 1.5rem;
+
   cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .mobile-menu-button:hover {
-  background: var(--navy-light);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #c9aa69;
 }
 
 .mobile-menu-button__icon {
+  display: inline-block;
   line-height: 1;
 }
 
+
 /* =========================================================
-   TABLET
-   ========================================================= */
+   13. TABLET HEADER
+========================================================= */
 
 @media (max-width: 1050px) {
+
   .header-top__inner {
-    grid-template-columns: 115px minmax(0, 1fr) 115px;
-    gap: 15px;
+    grid-template-columns: 125px minmax(0, 1fr) 125px;
+    gap: 17px;
   }
 
   .header-logo img {
-    width: 105px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-conference-info__title {
+    font-size: clamp(1rem, 1.7vw, 1.3rem);
   }
 
   .main-nav__link,
   .main-nav__toggle {
     padding-inline: 8px;
-    font-size: 0.75rem;
+    font-size: 0.74rem;
   }
+
 }
 
+
 /* =========================================================
-   MOBILE NAVIGATION
-   ========================================================= */
+   14. MOBILE AND TABLET NAVIGATION
+========================================================= */
 
 @media (max-width: 850px) {
 
-  /* Top banner */
+  /* Institutional banner */
 
   .header-top {
     padding: 16px 0;
   }
 
   .header-top__inner {
-    grid-template-columns: 75px minmax(0, 1fr) 75px;
+    grid-template-columns: 82px minmax(0, 1fr) 82px;
     gap: 10px;
-    min-height: 120px;
+    min-height: 125px;
   }
 
   .header-logo img {
-    width: 72px;
-    height: 85px;
+    width: 82px;
+    height: 92px;
   }
 
   .header-conference-info__title {
     font-size: 0.98rem;
+    line-height: 1.4;
   }
 
   .header-conference-info__acronym {
@@ -411,24 +641,47 @@
     display: inline-flex;
   }
 
+  /* Mobile navigation list */
+
   .main-nav__list {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    display: none;
+    z-index: 1100;
+
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    max-height: calc(100vh - 190px);
+
+    width: 100%;
+    max-height: 0;
+
+    overflow-x: hidden;
     overflow-y: auto;
-    padding: 7px 0;
-    background: var(--navy);
+
+    padding: 0;
+
+    background: #142944;
+
     box-shadow: 0 15px 30px rgba(9, 22, 41, 0.22);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
   }
 
   .main-nav.is-open .main-nav__list {
-    display: flex;
+    max-height: calc(100vh - 150px);
+    padding: 8px 0;
+
+    opacity: 1;
+    visibility: visible;
   }
 
   .main-nav__item {
@@ -436,61 +689,114 @@
     width: 100%;
   }
 
+  /* Mobile links */
+
   .main-nav__link,
   .main-nav__toggle {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+
     width: 100%;
-    min-height: 48px;
-    padding: 11px 20px;
+    min-height: 49px;
+
+    padding: 12px 20px;
+
     border-bottom: 0;
+
     text-align: left;
     font-size: 0.9rem;
+    white-space: normal;
   }
 
   .main-nav__link:hover,
   .main-nav__toggle:hover,
   .main-nav__item.is-open > .main-nav__toggle {
     border-bottom: 0;
-    background: var(--navy-light);
+    background: rgba(255, 255, 255, 0.09);
   }
 
-  /* Mobile dropdowns */
+  /* Mobile dropdown chevron */
+
+  .main-nav__arrow {
+    margin-left: auto;
+  }
+
+  /* Mobile dropdown menu */
 
   .mega-menu,
   .has-dropdown:hover > .mega-menu:not([hidden]),
   .has-dropdown:focus-within > .mega-menu:not([hidden]) {
     position: static;
-    display: none;
+
+    display: block;
+
     width: 100%;
     max-width: none;
-    padding: 5px 12px 10px 25px;
+
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0 12px 0 25px;
+
     border-top: 0;
-    border-left: 3px solid var(--gold);
-    background: var(--navy-light);
+    border-left: 3px solid #c9aa69;
+    border-radius: 0;
+
+    background: rgba(255, 255, 255, 0.055);
     box-shadow: none;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(-5px);
+
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      padding 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
   }
 
+  /* Open mobile dropdown */
+
   .has-dropdown.is-open > .mega-menu:not([hidden]) {
-    display: block;
+    max-height: 450px;
+
+    padding-top: 6px;
+    padding-bottom: 9px;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
   }
+
+  /* Mobile dropdown links */
 
   .mega-menu a {
     padding: 10px 12px;
-    color: var(--white);
-    font-size: 0.86rem;
+
+    color: #ffffff;
+    font-size: 0.85rem;
   }
 
   .mega-menu a:hover,
   .mega-menu a:focus-visible {
     padding-left: 17px;
     background: rgba(255, 255, 255, 0.09);
-    color: var(--gold-light);
+    color: #e5cc96;
   }
+
 }
 
+
 /* =========================================================
-   SMALL MOBILE SCREENS
-   ========================================================= */
+   15. SMALL MOBILE SCREENS
+========================================================= */
 
 @media (max-width: 480px) {
 
@@ -499,46 +805,159 @@
   }
 
   .header-top__inner {
-    grid-template-columns: 55px minmax(0, 1fr) 55px;
+    grid-template-columns: 60px minmax(0, 1fr) 60px;
     gap: 7px;
-    min-height: 110px;
+    min-height: 112px;
   }
 
   .header-logo img {
-    width: 55px;
-    height: 65px;
+    width: 60px;
+    height: 70px;
     padding: 2px;
   }
 
   .header-conference-info__title {
-    font-size: 0.8rem;
-    line-height: 1.35;
+    font-size: 0.79rem;
+    line-height: 1.4;
+    letter-spacing: 0;
   }
 
   .header-conference-info__acronym {
     margin-bottom: 5px !important;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
   }
 
   .header-conference-info__organised {
-    font-size: 0.68rem;
+    font-size: 0.67rem;
   }
 
   .header-conference-info__institute {
-    font-size: 0.7rem;
+    font-size: 0.69rem;
+    line-height: 1.4;
   }
 
   .header-conference-info__location,
   .header-conference-info__date-label {
-    font-size: 0.66rem;
+    font-size: 0.65rem;
   }
 
   .header-conference-info__date {
-    font-size: 0.76rem;
+    font-size: 0.75rem;
   }
 
   .header-conference-info__programme {
     margin-top: 5px !important;
-    font-size: 0.6rem;
+    font-size: 0.59rem;
+    line-height: 1.4;
   }
+
+  .main-nav__inner {
+    min-height: 54px;
+  }
+
+  .mobile-menu-button {
+    width: 43px;
+    height: 41px;
+  }
+
+}
+
+
+/* =========================================================
+   16. EXTRA SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .header-top__inner {
+    grid-template-columns: 48px minmax(0, 1fr) 48px;
+    gap: 5px;
+  }
+
+  .header-logo img {
+    width: 48px;
+    height: 58px;
+  }
+
+  .header-conference-info__title {
+    font-size: 0.73rem;
+  }
+
+  .header-conference-info__programme {
+    font-size: 0.55rem;
+  }
+
+}
+
+
+/* =========================================================
+   17. ACCESSIBILITY AND REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .header-logo img,
+  .main-nav__link,
+  .main-nav__toggle,
+  .main-nav__arrow,
+  .main-nav__arrow::before,
+  .mega-menu,
+  .mega-menu a,
+  .mobile-menu-button,
+  .main-nav__list {
+    transition: none !important;
+    animation: none !important;
+  }
+
+}
+
+/* ---------- RESPONSIVE MENU BUTTON ---------- */
+
+/* Hide hamburger button when full desktop navigation is visible */
+.mobile-menu-button {
+    display: none !important;
+}
+
+/* Show and centre hamburger button only on smaller screens */
+@media (max-width: 850px) {
+
+    .mobile-menu-button {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+
+        width: auto;
+        min-width: 112px;
+        height: 44px;
+        padding: 0 16px;
+        margin: 7px auto;
+
+        border: none;
+        border-radius: 7px;
+        background: transparent;
+
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .mobile-menu-button__label {
+        display: inline-block;
+    }
+
+    .mobile-menu-button__icon {
+        display: inline-block;
+        font-size: 19px;
+        line-height: 1;
+    }
+
+    /* Centre the menu button horizontally */
+    .main-nav__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

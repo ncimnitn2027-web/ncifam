@@ -354,3 +354,207 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+/* =========================================
+   ABOUT CITY IMAGE SLIDER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sliders = document.querySelectorAll("[data-city-slider]");
+
+  sliders.forEach((slider) => {
+
+    const slides = Array.from(
+      slider.querySelectorAll(".about-city__slide")
+    );
+
+    const indicators = Array.from(
+      slider.querySelectorAll("[data-city-indicators] button")
+    );
+
+    const previousButton = slider.querySelector("[data-city-prev]");
+    const nextButton = slider.querySelector("[data-city-next]");
+
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    let autoplay;
+
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    function showSlide(index) {
+
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === currentIndex);
+      });
+
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("is-active", i === currentIndex);
+        indicator.setAttribute(
+          "aria-current",
+          i === currentIndex ? "true" : "false"
+        );
+      });
+
+    }
+
+    function startAutoplay() {
+      if (reducedMotion || slides.length < 2) return;
+
+      clearInterval(autoplay);
+
+      autoplay = setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 5000);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplay);
+      startAutoplay();
+    }
+
+    previousButton?.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+      resetAutoplay();
+    });
+
+    nextButton?.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+      resetAutoplay();
+    });
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", () => {
+        showSlide(index);
+        resetAutoplay();
+      });
+    });
+
+    slider.addEventListener("mouseenter", () => {
+      clearInterval(autoplay);
+    });
+
+    slider.addEventListener("mouseleave", startAutoplay);
+
+    slider.addEventListener("focusin", () => {
+      clearInterval(autoplay);
+    });
+
+    slider.addEventListener("focusout", startAutoplay);
+
+    showSlide(0);
+    startAutoplay();
+
+  });
+
+});
+
+
+/* =========================================
+   ABOUT INSTITUTE IMAGE SLIDER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const sliders = document.querySelectorAll("[data-institute-slider]");
+
+  sliders.forEach((slider) => {
+
+    const slides = Array.from(
+      slider.querySelectorAll(".about-institute__slide")
+    );
+
+    const indicators = Array.from(
+      slider.querySelectorAll("[data-institute-indicators] button")
+    );
+
+    const previousButton = slider.querySelector("[data-institute-prev]");
+    const nextButton = slider.querySelector("[data-institute-next]");
+
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    let autoplay;
+
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    function showSlide(index) {
+
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("is-active", i === currentIndex);
+      });
+
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle("is-active", i === currentIndex);
+
+        indicator.setAttribute(
+          "aria-current",
+          i === currentIndex ? "true" : "false"
+        );
+      });
+
+    }
+
+    function startAutoplay() {
+
+      if (reducedMotion || slides.length < 2) return;
+
+      clearInterval(autoplay);
+
+      autoplay = setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 5000);
+
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplay);
+      startAutoplay();
+    }
+
+    previousButton?.addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+      resetAutoplay();
+    });
+
+    nextButton?.addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+      resetAutoplay();
+    });
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", () => {
+        showSlide(index);
+        resetAutoplay();
+      });
+    });
+
+    slider.addEventListener("mouseenter", () => {
+      clearInterval(autoplay);
+    });
+
+    slider.addEventListener("mouseleave", startAutoplay);
+
+    slider.addEventListener("focusin", () => {
+      clearInterval(autoplay);
+    });
+
+    slider.addEventListener("focusout", startAutoplay);
+
+    showSlide(0);
+    startAutoplay();
+
+  });
+
+});
+
+
