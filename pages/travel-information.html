@@ -4,64 +4,528 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Travel information for conference participants visiting NIT Nagaland.">
-  <title>Travel Information | Conference 2027 – NIT Nagaland</title>
+  <meta name="description" content="Travel information for NCIFAM-2027 at NIT Nagaland, Chumukedima, Nagaland.">
+  <title>Travel Information | NCIFAM-2027</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/components.css">
 </head>
-<body data-page="travel-information">
+
+<body>
+
   <header id="site-header" data-partial="header"></header>
 
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <p class="section-eyebrow">Plan Your Visit</p>
-        <h1>Travel Information</h1>
-        <p>Travel guidance for participants attending the conference at NIT Nagaland.</p>
+  <main>
+
+    <!-- TRAVEL HERO -->
+    <section class="travel-hero">
+      <div class="travel-hero__image"></div>
+      <div class="travel-hero__overlay"></div>
+
+      <div class="travel-hero__content">
+        <div class="travel-hero__eyebrow">
+          <span></span>
+          VISITOR INFORMATION
+        </div>
+
+        <h1>Plan Your <em>Visit.</em></h1>
+
+        <p class="travel-hero__description">
+          Your journey to NCIFAM-2027 begins in Nagaland.
+          Find essential travel information to help you reach
+          the National Institute of Technology Nagaland.
+        </p>
+
+        <div class="travel-hero__details">
+          <div>
+            <span class="travel-hero__detail-label">CONFERENCE DATES</span>
+            <strong>18–20 February 2027</strong>
+          </div>
+
+          <div class="travel-hero__detail-divider"></div>
+
+          <div>
+            <span class="travel-hero__detail-label">VENUE</span>
+            <strong>NIT Nagaland, Chumukedima</strong>
+          </div>
+        </div>
+
+        <a class="travel-hero__button"
+           href="#how-to-reach">
+          Explore Travel Options
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="travel-hero__side-label">
+        NAGALAND · INDIA
+      </div>
+
+      <div class="travel-hero__bottom">
+        <span>NCIFAM-2027</span>
+        <span>TRAVEL INFORMATION</span>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Reaching NIT Nagaland</h2>
-          <p>Travel information will help participants plan their journey to the conference venue.</p>
+
+    <!-- INTRODUCTION -->
+    <section class="travel-intro section-padding">
+      <div class="travel-container travel-intro__grid">
+
+        <div class="travel-intro__heading">
+          <span class="travel-kicker">WELCOME TO NAGALAND</span>
+          <h2>A destination<br>worth discovering.</h2>
         </div>
 
-        <div class="content-placeholder">
-          <h3>By Air</h3>
-          <p>Relevant airport information and onward travel guidance will be provided here after verification.</p>
+        <div class="travel-intro__text">
+          <p>
+            The National Institute of Technology Nagaland is located
+            at Chumukedima, near Dimapur. Dimapur serves as an important
+            gateway for visitors travelling to Nagaland by air, rail
+            and road.
+          </p>
+
+          <p>
+            Participants attending NCIFAM-2027 are encouraged to plan
+            their journeys in advance and allow sufficient time for
+            onward travel to the Institute.
+          </p>
+
+          <a class="travel-text-link"
+             href="https://www.nitnagaland.ac.in/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit the Institute Website
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
 
-        <div class="content-placeholder">
-          <h3>By Rail</h3>
-          <p>Relevant railway station information and onward travel guidance will be provided here after verification.</p>
-        </div>
-
-        <div class="content-placeholder">
-          <h3>By Road</h3>
-          <p>Road connectivity and local transport information will be updated here.</p>
-        </div>
-
-        <div class="content-placeholder">
-          <h3>Conference Venue</h3>
-          <p>National Institute of Technology Nagaland, Nagaland, India.</p>
-          <p>Detailed campus directions and venue information will be published here.</p>
-        </div>
-
-        <p class="notice-text">Participants should verify travel arrangements before departure. Further guidance will be announced by the organisers.</p>
       </div>
     </section>
+
+
+    <!-- LOCATION HIGHLIGHTS -->
+    <section class="travel-location-strip">
+      <div class="travel-container travel-location-strip__grid">
+
+        <div class="travel-location-item">
+          <span class="travel-location-item__number">01</span>
+          <div>
+            <span>INSTITUTE LOCATION</span>
+            <strong>Chumukedima, Nagaland</strong>
+          </div>
+        </div>
+
+        <div class="travel-location-item">
+          <span class="travel-location-item__number">02</span>
+          <div>
+            <span>NEAREST AIRPORT</span>
+            <strong>Dimapur Airport</strong>
+          </div>
+        </div>
+
+        <div class="travel-location-item">
+          <span class="travel-location-item__number">03</span>
+          <div>
+            <span>RAIL CONNECTIVITY</span>
+            <strong>Dimapur Railway Station</strong>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- HOW TO REACH -->
+    <section class="travel-routes section-padding" id="how-to-reach">
+      <div class="travel-container">
+
+        <div class="travel-section-heading">
+          <div>
+            <span class="travel-kicker">GETTING HERE</span>
+            <h2>How to reach<br>NIT Nagaland.</h2>
+          </div>
+
+          <p>
+            Dimapur is the principal arrival point for visitors
+            travelling to the Institute. Choose the mode of transport
+            that best suits your journey.
+          </p>
+        </div>
+
+
+        <div class="travel-route-grid">
+
+          <!-- AIR -->
+          <article class="travel-route-card">
+            <div class="travel-route-card__top">
+              <span class="travel-route-card__number">01 / AIR</span>
+              <span class="travel-route-card__icon" aria-hidden="true">✈</span>
+            </div>
+
+            <h3>By Air</h3>
+
+            <p>
+              Dimapur Airport is the nearest airport to NIT Nagaland.
+              The Institute's website indicates that the airport is
+              approximately 13 km from the campus.
+            </p>
+
+            <div class="travel-route-card__fact">
+              <span>NEAREST AIRPORT</span>
+              <strong>Dimapur Airport</strong>
+            </div>
+
+            <div class="travel-route-card__fact">
+              <span>APPROXIMATE DISTANCE</span>
+              <strong>13 km from the Institute</strong>
+            </div>
+
+            <p class="travel-route-card__note">
+              From the airport, visitors can arrange onward travel
+              to the campus by taxi or other locally available transport.
+            </p>
+
+            <a class="travel-card-link"
+               href="https://www.google.com/maps/search/?api=1&query=Dimapur+Airport+Nagaland"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Airport Location <span>↗</span>
+            </a>
+          </article>
+
+
+          <!-- RAIL -->
+          <article class="travel-route-card travel-route-card--featured">
+            <div class="travel-route-card__top">
+              <span class="travel-route-card__number">02 / RAIL</span>
+              <span class="travel-route-card__icon" aria-hidden="true">🚆</span>
+            </div>
+
+            <h3>By Train</h3>
+
+            <p>
+              Dimapur Railway Station is connected to the North-East
+              Frontier Railway network and serves as a major rail
+              arrival point for visitors to Nagaland.
+            </p>
+
+            <div class="travel-route-card__fact">
+              <span>NEAREST RAILWAY STATION</span>
+              <strong>Dimapur Railway Station</strong>
+            </div>
+
+            <div class="travel-route-card__fact">
+              <span>APPROXIMATE DISTANCE</span>
+              <strong>17 km from the Institute</strong>
+            </div>
+
+            <p class="travel-route-card__note">
+              Taxis and other local transport options are available
+              around Dimapur Railway Station for onward journeys.
+            </p>
+
+            <a class="travel-card-link"
+               href="https://www.google.com/maps/search/?api=1&query=Dimapur+Railway+Station+Nagaland"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Railway Station <span>↗</span>
+            </a>
+          </article>
+
+
+          <!-- ROAD -->
+          <article class="travel-route-card">
+            <div class="travel-route-card__top">
+              <span class="travel-route-card__number">03 / ROAD</span>
+              <span class="travel-route-card__icon" aria-hidden="true">🚘</span>
+            </div>
+
+            <h3>By Road</h3>
+
+            <p>
+              Dimapur is accessible by road from several cities in
+              the North-East. Bus and taxi services connect Dimapur
+              with destinations including Guwahati, Shillong and Kohima.
+            </p>
+
+            <div class="travel-route-card__fact">
+              <span>MAIN ARRIVAL CITY</span>
+              <strong>Dimapur</strong>
+            </div>
+
+            <div class="travel-route-card__fact">
+              <span>ONWARD JOURNEY</span>
+              <strong>Dimapur to Chumukedima</strong>
+            </div>
+
+            <p class="travel-route-card__note">
+              Visitors should confirm road conditions, transport
+              availability and journey timings before departure.
+            </p>
+
+            <a class="travel-card-link"
+               href="https://www.google.com/maps/search/?api=1&query=NIT+Nagaland+Chumukedima"
+               target="_blank"
+               rel="noopener noreferrer">
+              Locate the Institute <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CAMPUS LOCATION -->
+    <section class="travel-campus section-padding">
+      <div class="travel-container travel-campus__grid">
+
+        <div class="travel-campus__visual">
+          <div class="travel-campus__visual-inner">
+            <span class="travel-campus__visual-kicker">
+              YOUR DESTINATION
+            </span>
+
+            <div class="travel-campus__visual-mark">NIT</div>
+
+            <h3>National Institute<br>of Technology Nagaland</h3>
+
+            <span class="travel-campus__visual-location">
+              CHUMUKEDIMA · NAGALAND · INDIA
+            </span>
+          </div>
+        </div>
+
+        <div class="travel-campus__content">
+          <span class="travel-kicker">CONFERENCE VENUE</span>
+
+          <h2>Find your way<br>to the campus.</h2>
+
+          <p>
+            NCIFAM-2027 will be hosted at the National Institute
+            of Technology Nagaland, located at Chumukedima,
+            near Dimapur.
+          </p>
+
+          <div class="travel-campus__address">
+            <span>VENUE ADDRESS</span>
+            <strong>
+              National Institute of Technology Nagaland,
+              Chumukedima, Dimapur, Nagaland – 797103, India.
+            </strong>
+          </div>
+
+          <a class="travel-primary-button"
+             href="https://www.google.com/maps/search/?api=1&query=National+Institute+of+Technology+Nagaland+Chumukedima"
+             target="_blank"
+             rel="noopener noreferrer">
+            Open Campus Location
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ENTRY PERMITS -->
+    <section class="travel-permits section-padding">
+      <div class="travel-container travel-permits__grid">
+
+        <div>
+          <span class="travel-kicker">BEFORE YOU TRAVEL</span>
+          <h2>Check the<br>entry requirements.</h2>
+
+          <p>
+            Visitors should check the applicable entry permit
+            requirements before travelling to Nagaland.
+            Requirements may differ depending on nationality
+            and visitor status.
+          </p>
+        </div>
+
+        <div class="travel-permit-card">
+          <div class="travel-permit-card__item">
+            <span class="travel-permit-card__label">
+              FOR INDIAN VISITORS
+            </span>
+
+            <h3>Inner Line Permit (ILP)</h3>
+
+            <p>
+              Indian visitors are required to obtain an Inner Line
+              Permit (ILP) for entry into Nagaland, as per the
+              current state guidelines.
+            </p>
+
+            <a href="https://ilp.nagaland.gov.in/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Apply for ILP <span>↗</span>
+            </a>
+          </div>
+
+          <div class="travel-permit-card__divider"></div>
+
+          <div class="travel-permit-card__item">
+            <span class="travel-permit-card__label">
+              FOR FOREIGN VISITORS
+            </span>
+
+            <h3>Protected Area Permit (PAP)</h3>
+
+            <p>
+              Foreign visitors should check the current Protected
+              Area Permit requirements and applicable registration
+              procedures before travelling.
+            </p>
+
+            <a href="https://indianfrro.gov.in/frro/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Visit e-FRRO Portal <span>↗</span>
+            </a>
+          </div>
+
+          <p class="travel-permit-card__notice">
+            Please consult the official government portals for
+            the latest requirements before your journey.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRAVEL CHECKLIST -->
+    <section class="travel-checklist section-padding">
+      <div class="travel-container">
+
+        <div class="travel-section-heading">
+          <div>
+            <span class="travel-kicker">TRAVEL PREPARATION</span>
+            <h2>A few things<br>to remember.</h2>
+          </div>
+
+          <p>
+            A little preparation can make your journey to
+            NCIFAM-2027 more convenient.
+          </p>
+        </div>
+
+        <div class="travel-checklist__grid">
+
+          <div class="travel-check-item">
+            <span>01</span>
+            <div>
+              <h3>Plan Your Arrival</h3>
+              <p>
+                Book your flights or train tickets early and
+                allow enough time for onward travel to campus.
+              </p>
+            </div>
+          </div>
+
+          <div class="travel-check-item">
+            <span>02</span>
+            <div>
+              <h3>Check Entry Permits</h3>
+              <p>
+                Review the applicable Nagaland entry permit
+                requirements before departure.
+              </p>
+            </div>
+          </div>
+
+          <div class="travel-check-item">
+            <span>03</span>
+            <div>
+              <h3>Arrange Local Transport</h3>
+              <p>
+                Confirm your transport from Dimapur Airport
+                or Railway Station to the Institute.
+              </p>
+            </div>
+          </div>
+
+          <div class="travel-check-item">
+            <span>04</span>
+            <div>
+              <h3>Keep Documents Ready</h3>
+              <p>
+                Carry your valid identification, travel tickets,
+                conference registration details and permit documents.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TRAVEL SUPPORT NOTICE -->
+    <section class="travel-support">
+      <div class="travel-container travel-support__inner">
+
+        <div>
+          <span class="travel-kicker">TRAVELLING FOR NCIFAM-2027?</span>
+          <h2>Stay connected<br>with the conference.</h2>
+          <p>
+            Further information regarding local transportation,
+            accommodation and visitor assistance will be published
+            here when confirmed by the organising committee.
+          </p>
+        </div>
+
+        <div class="travel-support__actions">
+          <a href="accommodation.html"
+             class="travel-support__button">
+            Accommodation Information
+            <span>↗</span>
+          </a>
+
+          <a href="contact.html"
+             class="travel-support__text-link">
+            Contact the Organising Team
+            <span>→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONFERENCE FOOTER STRIP -->
+    <section class="travel-conference-strip">
+      <div class="travel-container travel-conference-strip__inner">
+        <div>
+          <span>NCIFAM-2027</span>
+          <h2>We look forward to welcoming you.</h2>
+        </div>
+
+        <div class="travel-conference-strip__date">
+          <span>18–20 FEBRUARY 2027</span>
+          <strong>NIT Nagaland</strong>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer id="site-footer" data-partial="footer"></footer>
 
   <script src="../js/components.js"></script>
   <script src="../js/navigation.js"></script>
-  <script src="../js/slider.js"></script>
   <script src="../js/main.js"></script>
+
 </body>
 </html>
